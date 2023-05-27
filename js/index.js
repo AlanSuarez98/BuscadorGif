@@ -8,8 +8,8 @@ let generateGif = () => {
 
   //Obtener valor de búsqueda (predeterminado => risa)
   let q = document.getElementById("search-box").value;
-  //Necesitamos 10 gifs para mostrar en el resultado
-  let gifCount = 24;
+  //Cantidad de gif que se solicita
+  let gifCount = 12;
   //URL API =
   let finalURL = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${q}&limit=${gifCount}&offset=0&rating=g&lang=en`;
   document.querySelector(".wrapper").innerHTML = "";
